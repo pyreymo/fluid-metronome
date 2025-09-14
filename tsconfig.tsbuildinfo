@@ -1,1 +1,0 @@
-{"root":["./src/app.tsx","./src/types.tsx","./src/components/bpmslider.tsx","./src/components/controls.tsx","./src/components/rythmselector.tsx","./src/components/visualizer.tsx","./src/hooks/usemetronome.ts","./src/hooks/usetaptempo.ts"],"version":"5.8.3"}
