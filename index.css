@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    touch-action: manipulation;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #090A0F;
+    background-image: radial-gradient(circle at center, #1B2735 0%, #090A0F 70%);
+}
+
+/* Custom styles for range input to match the reference image */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    /* Slightly thicker track for better interaction */
+    background: rgba(255, 255, 255, 0.1);
+    /* Darker, more subtle track */
+    outline: none;
+    border-radius: 9999px;
+    transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #F97316;
+    /* Solid orange thumb */
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 0 2px rgba(9, 10, 15, 0.5);
+    /* Inner shadow for depth */
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 5px rgba(249, 115, 22, 0.3);
+    /* Orange focus glow */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #F97316;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 0 2px rgba(9, 10, 15, 0.5);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 5px rgba(249, 115, 22, 0.3);
+}
